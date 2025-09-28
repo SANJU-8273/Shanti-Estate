@@ -36,19 +36,19 @@ const Projects = () => {
           aria-label="Previous Project"
           onClick={handlePrev}
         >
-          <img src={assets.left_arrow} alt="Previous" className="w-4 sm:w-5" />
+          <img loading="lazy" src={assets.left_arrow} alt="Previous" className="w-4 sm:w-5" />
         </button>
         <button
           className="p-2 sm:p-3 bg-gray-200 rounded-full mx-1 hover:bg-gray-300 transition"
           aria-label="Next Project"
           onClick={handleNext}
         >
-          <img src={assets.right_arrow} alt="Next" className="w-4 sm:w-5" />
+          <img loading="lazy" src={assets.right_arrow} alt="Next" className="w-4 sm:w-5" />
         </button>
       </div>
 
       {/* Project Carousel */}
-      <div className="relative overflow-hidden px-40 " >
+       <div className="relative overflow-hidden px-4 sm:px-12">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -62,7 +62,7 @@ const Projects = () => {
               className="w-full flex-shrink-0 px-4 sm:px-12"
             >
               <div className="relative">
-                <img
+                <img loading="lazy"
                   className="w-full h-64 sm:h-96 object-cover rounded-lg shadow-md"
                   src={project.image}
                   alt={project.title}

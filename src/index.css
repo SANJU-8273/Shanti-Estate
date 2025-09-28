@@ -12,6 +12,6 @@ body {
 
   /* Elegant neutral background */
   background: linear-gradient(135deg, #f5f7fa, #e4ecf4);
-  background-attachment: fixed;
+ 
   background-size: cover;
 }

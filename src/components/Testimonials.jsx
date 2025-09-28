@@ -12,7 +12,7 @@ const Testimonials = () => {
             key={index}
             className="w-[90%] sm:w-[240px] bg-white border border-gray-100 shadow-sm rounded-lg px-4 py-6 text-center hover:shadow-md transition-shadow duration-300"
           >
-            <img
+            <img loading="lazy"
               className="w-16 h-16 rounded-full mx-auto mb-3 object-cover"
               src={testimonial.image}
               alt={testimonial.alt}
@@ -23,7 +23,7 @@ const Testimonials = () => {
             {/* Rating Stars */}
             <div className="flex justify-center gap-[2px] text-yellow-500 mb-3">
               {Array.from({ length: testimonial.rating }, (_, i) => (
-                <img src={assets.star_icon} key={i} alt="star" className="w-3.5 h-3.5" />
+                <img loading="lazy" src={assets.star_icon} key={i} alt="star" className="w-3.5 h-3.5" />
               ))}
             </div>
 

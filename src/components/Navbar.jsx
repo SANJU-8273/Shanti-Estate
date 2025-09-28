@@ -85,7 +85,7 @@ const Navbar = () => {
           className="md:hidden focus:outline-none"
           aria-label="Toggle menu"
         >
-          <img src={assets.menu_icon} alt="Menu" className="w-7 h-7 invert" />
+          <img loading="lazy" src={assets.menu_icon} alt="Menu" className="w-7 h-7 invert" />
         </button>
       </div>
 
